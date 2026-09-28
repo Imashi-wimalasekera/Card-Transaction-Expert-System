@@ -232,9 +232,8 @@ R19 = Rule(
 
 
 # R20: Compile a final human-readable message (SYSTEM DESIGN combination rule that assembles code + reason into the message shown to the user)
-
 R20 = Rule(
-    "R20", "Compile the final decision message from code + reason",
+    "R20", "Final Decision Message: compile code + reason ->",
     lambda f: "code" in f and "message" not in f,
     lambda f: f.update({
         "message": f"ISO 8583 response {f['code']}: {f['reason']}",

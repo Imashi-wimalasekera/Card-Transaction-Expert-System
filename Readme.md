@@ -11,7 +11,7 @@ Knowledge sources:
 - [S2] softwareag forum - VISA Base I ISO 8583 response code list
 - [S3] CCBill KB - Comprehensive List of Credit Card Decline Codes
 
-Rules R1-R17 map directly onto standard, published ISO 8583 response codes (41 lost card, 43 stolen card, 62 restricted card, 54 expired card, 59 suspected fraud, 75 PIN tries exceeded, 55 incorrect PIN, 05 do not honor, 03 invalid merchant, 13 invalid amount, 12 invalid transaction, 61 exceeds withdrawal amount limit, 65 exceeds withdrawal count limit, 51 insufficient funds, 40 function not supported, 58 not permitted to terminal, 68 response too late). 
+Rules R1-R17 map directly onto standard, published ISO 8583 response codes. 
 
 Rules R18-R20 are this project's own combination/reporting logic (decide APPROVE when nothing else matched, tag a risk tier, compile the final message) and are labelled as such, not as card-scheme citations.
 
